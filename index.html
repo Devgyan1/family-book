@@ -1,0 +1,43 @@
+<html>
+    <head><title>Family</title></head>
+    <body>
+        <center>
+            <h1 id="title">My family book</h1>
+            <img style="height: 400px; width: 410px;" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg" id="Family">
+            <br>
+            <h2 id="familyname"></h2>
+            <button id="next" onclick="nextpic()">Next Family Member</button>
+        </center>
+        <script>
+            var pics_array=[
+                     "IMG_8516.JPG",
+                     "IMG_8527.JPG",
+                     "IMG_8680.JPG",
+                     "IMG_8511.JPG",
+                     ];
+            
+            var text_array=[
+                     "Devgyan Prakash",
+                     "Mausmi Raj",
+                     "Nitya Prakash",
+                     "Nirvan Prakash",
+                     ];
+                     var y = 0;
+
+                 function nextpic() { 
+
+                  
+
+                  document.getElementById("Family").src = pics_array[y];
+                  document.getElementById("familyname").innerHTML=text_array[y]; 
+                  y++;
+                  if(y == 4) {
+                  y=0;
+                  }
+ 
+
+                }
+
+        </script>
+    </body>
+</html>
